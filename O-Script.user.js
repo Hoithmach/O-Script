@@ -4,6 +4,7 @@
 // @version      0.1
 // @description  Open full size artwork in a new tab with one keypress
 // @author       Hoithmach
+// @license      GPL-3.0; https://www.gnu.org/licenses/gpl-3.0.txt
 // @match        https://gelbooru.com/index.php?page=post&s=view&id=*
 // @match        https://danbooru.donmai.us/posts/*
 // @match        https://yande.re/post/show/*
