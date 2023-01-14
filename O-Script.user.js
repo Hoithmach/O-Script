@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         O-Script
-// @namespace    Chicken Egg
+// @namespace    https://github.com/Hoithmach/O-Script
 // @version      0.1
 // @description  Open full size artwork in a new tab with one keypress
 // @author       Hoithmach
@@ -14,7 +14,7 @@
 // @match        https://www.pixiv.net/en/artworks/*
 // @match        https://rule34.paheal.net/post/view/*
 // @match        https://*.fanbox.cc/*
-// @icon         Chicken Egg
+// @icon         https://raw.githubusercontent.com/Hoithmach/O-Script/master/o.png
 // @require      https://code.jquery.com/jquery-3.6.2.min.js
 // @require      https://gist.github.com/BrockA/2625891/raw/9c97aa67ff9c5d56be34a55ad6c18a314e5eb548/waitForKeyElements.js
 // @grant        GM_openInTab
