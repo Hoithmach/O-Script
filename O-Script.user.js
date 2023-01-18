@@ -31,7 +31,10 @@ const vieworiginal = ["booru.allthefallen.moe", "danbooru.donmai.us"]
 const viewlargerversion = ["yande.re", "lolibooru.moe"]
 
 function pixiv() {
-    img_count = parseInt(document.querySelector("div[aria-label='Preview']").textContent.split("/")[1]);
+    var img_qs = document.querySelector("div[aria-label='Preview']")  // Will return null if pixiv gallery is a single image
+    if (img_qs) {
+      img_count = parseInt(document.querySelector("div[aria-label='Preview']").textContent.split("/")[1]);
+    };
     link = []
     var img_url_template = document.querySelector("a[href*='img-original'][href*='_p0.'").getAttribute("href");
     var iut_array = img_url_template.split("_p0.");
@@ -93,7 +96,7 @@ function open() {
     } else if (window.location.hostname == "www.zerochan.net") {
         link = document.getElementsByClassName("preview")[0].href;
     } else if (window.location.hostname == "www.pixiv.net") {
-        link = waitForKeyElements("div[aria-label='Preview']", pixiv);
+        link = waitForKeyElements("div[class='sc-1qpw8k9-0 gTFqQV']", pixiv);
     } else if (window.location.hostname == "rule34.paheal.net") {
         link = document.getElementById("main_image").src;
     } else if (window.location.hostname.endsWith("fanbox.cc")) {
