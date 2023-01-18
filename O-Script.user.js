@@ -25,7 +25,7 @@
 var link, li, a;
 var img_count = 1;
 
-# pixiv/zerochan/fanbox/rule34 are handled individually
+// pixiv/zerochan/fanbox/rule34 are handled individually
 const originalimage = ["gelbooru.com", "safebooru.org"];
 const vieworiginal = ["booru.allthefallen.moe", "danbooru.donmai.us"]
 const viewlargerversion = ["yande.re", "lolibooru.moe"]
